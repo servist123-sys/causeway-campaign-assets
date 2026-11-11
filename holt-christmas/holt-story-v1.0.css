@@ -1,0 +1,44 @@
+#christmas-story,#christmas-story *{box-sizing:border-box}
+#christmas-story{padding:100px 24px 112px;background:#f1f4ee;color:#194b3d;font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;word-break:keep-all;-webkit-font-smoothing:antialiased;scroll-margin-top:120px}
+#christmas-story .hs3-wrap{max-width:1280px;margin:0 auto}
+#christmas-story .hs3-header{text-align:center;margin-bottom:42px}
+#christmas-story .hs3-kicker{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 0 18px;color:#81725a;font-size:16px;font-weight:600;line-height:1.5}
+#christmas-story .hs3-kicker img{display:block;width:26px;height:30px;object-fit:contain}
+#christmas-story h2{margin:0;color:#194b3d;font-size:clamp(32px,3.5vw,46px);font-weight:800;letter-spacing:-.055em;line-height:1.35}
+#christmas-story .hs3-intro{margin:19px 0 0;font-size:20px;font-weight:500;line-height:1.75;letter-spacing:-.03em;color:#616a60}
+#christmas-story .hs3-cards{display:flex;gap:14px}
+#christmas-story .hs3-card{position:relative;isolation:isolate;overflow:hidden;flex:1 1 0;min-width:0;height:560px;border-radius:22px;background:var(--hs3-tone);transition:flex .65s cubic-bezier(.22,1,.36,1);box-shadow:0 4px 12px #194b3d06}
+#christmas-story .hs3-card.is-open{flex-grow:2.65}
+#christmas-story .hs3-photo{position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse at 50% 18%,#ffffff55,transparent 70%)}
+#christmas-story .hs3-photo img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;transition:transform .85s cubic-bezier(.22,1,.36,1)}
+#christmas-story .hs3-card.is-open .hs3-photo img{transform:scale(1.035)}
+#christmas-story .hs3-placeholder{position:absolute;inset:16% 12px auto;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;color:#50645699}
+#christmas-story .hs3-placeholder svg{width:34px;height:34px;fill:none;stroke:currentColor;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
+#christmas-story .hs3-placeholder span{font-size:16px;line-height:1.5}
+#christmas-story .hs3-shade{position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,#142c2420 0%,#142c2400 25%,#142c2480 65%,#142c24ed 100%)}
+#christmas-story .hs3-toggle{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;border-radius:inherit;background:transparent;cursor:pointer;z-index:1;appearance:none}
+#christmas-story .hs3-toggle:focus-visible{outline:3px solid #e6c180;outline-offset:-5px}
+#christmas-story .hs3-top{position:absolute;top:22px;left:22px;right:22px;display:flex;align-items:center;justify-content:space-between;gap:8px;pointer-events:none;z-index:2;color:#fff}
+#christmas-story .hs3-category{display:block;font-size:16px;font-weight:650;line-height:1.5;text-shadow:0 1px 5px #142c2450}
+#christmas-story .hs3-plus{width:32px;height:32px;display:grid;place-items:center;flex:none;border:1px solid #ffffff80;border-radius:50%;background:#ffffff24}
+#christmas-story .hs3-plus svg{display:block;width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round}
+#christmas-story .hs3-plus path:last-child{transform-origin:center;transition:transform .4s,opacity .4s}
+#christmas-story .is-open .hs3-plus path:last-child{transform:rotate(90deg);opacity:0}
+#christmas-story .hs3-body{position:absolute;bottom:28px;left:26px;right:26px;z-index:2;pointer-events:none}
+#christmas-story h3{margin:0;max-width:420px;color:#fff;font-size:24px;font-weight:750;line-height:1.4;letter-spacing:-.045em;transition:font-size .55s}
+#christmas-story h3 span{display:block}
+#christmas-story .is-open h3{font-size:32px}
+#christmas-story .hs3-details{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .55s cubic-bezier(.22,1,.36,1),opacity .3s}
+#christmas-story .is-open .hs3-details{grid-template-rows:1fr;opacity:1;transition-delay:0s,.15s}
+#christmas-story .hs3-detail-inner{min-height:0;overflow:hidden;visibility:hidden;transition:visibility .5s}
+#christmas-story .is-open .hs3-detail-inner{visibility:visible}
+#christmas-story .hs3-text{margin:17px 0 22px;max-width:420px;color:#fffffff0;font-size:20px;font-weight:450;line-height:1.75;letter-spacing:-.03em}
+#christmas-story .hs3-cta{position:relative;display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-height:48px;padding:0 17px 0 21px;border-radius:999px;border:1px solid #ffffff80;background:#fff;color:#194b3d;font-size:16px;font-weight:750;line-height:1.2;text-decoration:none;pointer-events:auto;transition:background .25s,transform .25s}
+#christmas-story .hs3-cta svg{display:block;width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s}
+#christmas-story .hs3-cta:hover{background:#f4e4bf}
+#christmas-story .hs3-cta:hover svg{transform:translateX(3px)}
+#christmas-story .hs3-cta:focus-visible{outline:3px solid #e6c180;outline-offset:4px}
+@media(max-width:1100px) and (min-width:901px){#christmas-story .hs3-cards{gap:10px}#christmas-story .hs3-top{left:16px;right:16px}#christmas-story .hs3-body{left:20px;right:20px}#christmas-story .hs3-card.is-open{flex-grow:2.9}#christmas-story h3{font-size:21px}#christmas-story .is-open h3{font-size:28px}#christmas-story .hs3-text{font-size:18px}}
+@media(max-width:900px){#christmas-story{padding:78px 24px 84px}#christmas-story .hs3-cards{display:block;max-width:680px;margin:0 auto}#christmas-story .hs3-card{height:132px;margin-bottom:12px;transition:height .6s cubic-bezier(.22,1,.36,1)}#christmas-story .hs3-card:last-child{margin-bottom:0}#christmas-story .hs3-card.is-open{height:500px}#christmas-story .hs3-header{margin-bottom:32px}#christmas-story .hs3-top{top:17px;left:22px;right:20px}#christmas-story .hs3-body{bottom:20px;left:22px;right:22px}#christmas-story h3{max-width:none;font-size:21px;line-height:1.4}#christmas-story h3 span{display:inline}#christmas-story h3 span+span:before{content:" "}#christmas-story .is-open h3{font-size:29px;max-width:460px}#christmas-story .hs3-text{font-size:20px;max-width:500px}#christmas-story .hs3-placeholder{display:none}#christmas-story .is-open .hs3-placeholder{display:flex;top:20%}#christmas-story .hs3-category{font-size:16px}}
+@media(max-width:480px){#christmas-story{padding:68px 20px 74px}#christmas-story h2{font-size:32px;max-width:330px;margin:0 auto}#christmas-story .hs3-intro{font-size:18px;max-width:330px;margin:16px auto 0}#christmas-story .hs3-card{border-radius:18px;height:142px}#christmas-story .hs3-card.is-open{height:540px}#christmas-story .hs3-body{left:22px;right:22px;bottom:24px}#christmas-story .is-open h3{font-size:28px}#christmas-story .is-open h3 span{display:block}#christmas-story .is-open h3 span+span:before{content:none}#christmas-story .hs3-text{font-size:18px;line-height:1.8;margin:15px 0 21px}}
+@media(prefers-reduced-motion:reduce){#christmas-story .hs3-card,#christmas-story .hs3-photo img,#christmas-story h3,#christmas-story .hs3-details,#christmas-story .hs3-detail-inner,#christmas-story .hs3-plus path,#christmas-story .hs3-cta,#christmas-story .hs3-cta svg{transition:none}}
