@@ -1,0 +1,73 @@
+#christmas-gifts,#christmas-gifts *{box-sizing:border-box}
+#christmas-gifts{position:relative;background:#fcfaf6;color:#194b3d;padding:100px 24px 112px;font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;word-break:keep-all;-webkit-font-smoothing:antialiased;scroll-margin-top:120px}
+#christmas-gifts .hcg-wrap{max-width:1280px;margin:0 auto}
+#christmas-gifts .hcg-header{max-width:740px;margin:0 0 40px}
+#christmas-gifts .hcg-kicker{display:flex;align-items:center;gap:10px;margin:0 0 18px;color:#81725a;font-size:16px;font-weight:600;line-height:1.5}
+#christmas-gifts .hcg-kicker img{display:block;width:26px;height:30px;object-fit:contain}
+#christmas-gifts h2{margin:0;color:#194b3d;font-size:clamp(32px,3.5vw,46px);font-weight:800;letter-spacing:-.055em;line-height:1.35}
+#christmas-gifts .hcg-intro{margin:20px 0 0;font-size:20px;font-weight:500;color:#62685f;line-height:1.8;letter-spacing:-.03em}
+#christmas-gifts .hcg-grid{display:grid;grid-template-columns:minmax(0,1fr) 370px;gap:32px;align-items:start}
+#christmas-gifts .hcg-products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+#christmas-gifts .hcg-product{position:relative;min-width:0;padding:22px;border:1px solid #e2e5dc;border-radius:22px;background:#fff;scroll-margin-top:125px;transition:border-color .25s,box-shadow .25s}
+#christmas-gifts .hcg-product.is-picked{border-color:#45705a;box-shadow:0 0 0 1px #45705a}
+#christmas-gifts .hcg-art{position:relative;display:grid;place-items:center;aspect-ratio:1.75;border-radius:14px;background:var(--hcg-tone);overflow:hidden}
+#christmas-gifts .hcg-art img{display:block;width:128px;height:128px;max-width:70%;object-fit:contain;filter:drop-shadow(0 10px 9px #63543e18);transition:transform .45s}
+#christmas-gifts .hcg-product:hover .hcg-art img{transform:translateY(-4px) rotate(-3deg)}
+#christmas-gifts .hcg-check{position:absolute;top:12px;right:12px;width:27px;height:27px;display:grid;place-items:center;border-radius:50%;background:#194b3d;color:#fff;opacity:0;transform:scale(.7);transition:opacity .25s,transform .25s}
+#christmas-gifts .is-picked .hcg-check{opacity:1;transform:scale(1)}
+#christmas-gifts .hcg-check svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#christmas-gifts .hcg-category{margin:19px 0 7px;font-size:16px;font-weight:500;line-height:1.5;color:#6f766a}
+#christmas-gifts .hcg-product h3{margin:0;color:#194b3d;font-size:23px;font-weight:750;line-height:1.45;letter-spacing:-.045em}
+#christmas-gifts .hcg-unit{margin:14px 0 17px;color:#6a7066;font-size:16px;line-height:1.5}
+#christmas-gifts .hcg-unit strong{font-size:22px;font-weight:750;color:#194b3d;margin-left:6px;letter-spacing:-.03em}
+#christmas-gifts button{font:inherit;cursor:pointer;appearance:none}
+#christmas-gifts button:disabled{cursor:default}
+#christmas-gifts button:focus-visible{outline:3px solid #b78b45;outline-offset:3px}
+#christmas-gifts .hcg-add{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;border:1px solid #bfd0c3;border-radius:999px;padding:0 19px;background:#fff;color:#194b3d;font-size:16px;font-weight:750;line-height:1.2;transition:background .25s,color .25s}
+#christmas-gifts .hcg-add:hover{background:#194b3d;color:#fff;border-color:#194b3d}
+#christmas-gifts .hcg-add span{font-size:25px;line-height:1;font-weight:400}
+#christmas-gifts .hcg-picked{min-height:24px;margin:10px 0 -2px;text-align:center;color:#41604b;font-size:16px;line-height:1.5}
+#christmas-gifts .hcg-picked:empty{visibility:hidden}
+#christmas-gifts .hcg-slot{position:relative;align-self:stretch;min-width:0}
+#christmas-gifts .hcg-slot>.hcg-cart{position:sticky;top:120px;max-height:calc(100svh - 145px)}
+#christmas-gifts .hcg-cart{display:flex;flex-direction:column;border:1px solid #d7e0d3;border-radius:22px;background:#f2f5ee;padding:25px;box-shadow:0 12px 40px #194b3d08}
+#christmas-gifts .hcg-cart-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex:none;margin-bottom:20px}
+#christmas-gifts .hcg-cart-head h3{display:flex;align-items:center;gap:10px;margin:0;font-size:22px;font-weight:750;line-height:1.4;letter-spacing:-.04em;color:#194b3d}
+#christmas-gifts .hcg-cart-icon{width:24px;height:24px;fill:currentColor;stroke:none;flex:none}
+#christmas-gifts .hcg-close{display:none;width:44px;height:44px;padding:0;border:0;background:transparent;font-size:28px;line-height:1;color:#194b3d}
+#christmas-gifts .hcg-items{margin:0;padding:0;list-style:none;min-height:0;overflow:auto}
+#christmas-gifts .hcg-row{padding:18px 0;border-top:1px solid #d7dfd1}
+#christmas-gifts .hcg-row-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:13px}
+#christmas-gifts .hcg-row-name{margin:0;color:#243d30;font-size:17px;line-height:1.5;font-weight:650;letter-spacing:-.03em}
+#christmas-gifts .hcg-remove{flex:none;min-height:30px;padding:0 2px;border:0;background:none;color:#6d7467;font-size:16px;text-decoration:underline;text-underline-offset:3px}
+#christmas-gifts .hcg-stepper{display:flex;align-items:center;justify-content:space-between;gap:8px;max-width:250px}
+#christmas-gifts .hcg-step{display:grid;place-items:center;width:44px;height:44px;border:1px solid #ccd8c7;border-radius:50%;padding:0;background:#fff;color:#194b3d;font-size:24px;line-height:1;flex:none}
+#christmas-gifts .hcg-step:hover{background:#e3ecde}
+#christmas-gifts .hcg-row-amount{font-size:20px;font-weight:750;line-height:1.2;white-space:nowrap;color:#194b3d;font-variant-numeric:tabular-nums}
+#christmas-gifts .hcg-empty{padding:26px 8px 31px;text-align:center;color:#6d7667;font-size:17px;line-height:1.85}
+#christmas-gifts .hcg-empty strong{display:block;color:#3d5945;font-weight:650;margin-bottom:8px}
+#christmas-gifts .hcg-cart-footer{flex:none;border-top:1px solid #ccd8c7;margin-top:4px;padding-top:22px}
+#christmas-gifts .hcg-total{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:0 0 19px;color:#194b3d;font-size:18px;font-weight:650;line-height:1.3}
+#christmas-gifts .hcg-total strong{font-size:30px;font-weight:800;letter-spacing:-.045em;font-variant-numeric:tabular-nums}
+#christmas-gifts .hcg-checkout{display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;width:100%;border:0;border-radius:999px;background:#194b3d;padding:13px 16px;color:#fff;font-size:16px;font-weight:750;line-height:1.4;transition:background .25s}
+#christmas-gifts .hcg-checkout:hover{background:#2c624f}
+#christmas-gifts .hcg-checkout:disabled{background:#e0e7db;color:#78846f}
+#christmas-gifts .hcg-cart-note{margin:13px 0 0;text-align:center;color:#727a6b;font-size:16px;line-height:1.6}
+#christmas-gifts .hcg-message{margin:12px 0 0;color:#8a3d38;font-size:16px;line-height:1.65}
+#christmas-gifts .hcg-message:empty{display:none}
+#christmas-gifts .hcg-disclosure{margin:25px 0 0;font-size:16px;line-height:1.9;color:#6d7468;letter-spacing:-.02em}
+#christmas-gifts .hcg-disclosure p{margin:0}
+#christmas-gifts .hcg-disclosure strong{color:#3f5b46;font-weight:650}
+#christmas-gifts .hcg-bar{display:none}
+#christmas-gifts .hcg-dialog{position:fixed;inset:auto 0 0;margin:0 auto;padding:0;border:0;width:100%;max-width:600px;max-height:86svh;border-radius:24px 24px 0 0;background:#f2f5ee;color:#194b3d;overflow:hidden}
+#christmas-gifts .hcg-dialog::backdrop{background:#102b2266;backdrop-filter:blur(3px)}
+#christmas-gifts .hcg-dialog[open]{display:flex;flex-direction:column}
+#christmas-gifts .hcg-dialog .hcg-cart{width:100%;max-height:86svh;border:0;border-radius:24px 24px 0 0;box-shadow:none;padding:22px 24px max(24px,env(safe-area-inset-bottom))}
+#christmas-gifts .hcg-dialog .hcg-close{display:block}
+#christmas-gifts .hcg-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#christmas-gifts [hidden]{display:none!important}
+#christmas-cart{scroll-margin-top:120px}
+@media(max-width:1100px){#christmas-gifts .hcg-grid{grid-template-columns:minmax(0,1fr) 330px;gap:24px}#christmas-gifts .hcg-products{gap:16px}#christmas-gifts .hcg-product{padding:18px}#christmas-gifts .hcg-product h3{font-size:21px}#christmas-gifts .hcg-cart{padding:22px}}
+@media(max-width:900px){#christmas-gifts{padding:78px 24px 98px}#christmas-gifts .hcg-grid{display:block}#christmas-gifts .hcg-slot{display:none}#christmas-gifts .hcg-header{margin-bottom:32px}#christmas-gifts .hcg-products{gap:20px}#christmas-gifts .hcg-art{aspect-ratio:1.65}#christmas-gifts .hcg-product h3{font-size:23px}#christmas-gifts .hcg-bar{display:block;position:fixed;bottom:0;left:0;right:0;z-index:2147482000;padding:10px 20px max(10px,env(safe-area-inset-bottom));background:#fffffff2;border-top:1px solid #194b3d20;box-shadow:0 -8px 28px #194b3d0a;backdrop-filter:blur(12px)}#christmas-gifts .hcg-open{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;max-width:680px;min-height:54px;margin:0 auto;padding:0;border:0;background:transparent;color:#194b3d;text-align:left}#christmas-gifts .hcg-bar-label{display:block;font-size:16px;line-height:1.5;color:#68745f}#christmas-gifts .hcg-bar-total{font-size:23px;font-weight:800;line-height:1.4;letter-spacing:-.03em}#christmas-gifts .hcg-bar-action{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:750}#christmas-gifts .hcg-bar-action svg{width:42px;height:42px;padding:10px;border-radius:50%;background:#194b3d;color:white;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}}
+@media(max-width:480px){#christmas-gifts{padding:68px 18px 100px}#christmas-gifts h2{font-size:32px}#christmas-gifts .hcg-intro{font-size:18px;margin-top:16px}#christmas-gifts .hcg-products{gap:12px}#christmas-gifts .hcg-product{padding:13px;border-radius:18px}#christmas-gifts .hcg-art{aspect-ratio:1.1;border-radius:12px}#christmas-gifts .hcg-art img{width:94px;height:106px;max-width:82%}#christmas-gifts .hcg-product h3{font-size:19px;line-height:1.5;min-height:57px}#christmas-gifts .hcg-category{font-size:16px;margin-top:15px;margin-bottom:6px}#christmas-gifts .hcg-unit{margin:12px 0 14px;font-size:16px}#christmas-gifts .hcg-unit strong{display:block;font-size:21px;margin:3px 0 0}#christmas-gifts .hcg-add{padding:0 13px;gap:6px}#christmas-gifts .hcg-picked{font-size:16px;min-height:48px;margin-top:9px}#christmas-gifts .hcg-check{top:8px;right:8px;width:24px;height:24px}#christmas-gifts .hcg-disclosure{margin-top:23px}#christmas-gifts .hcg-dialog .hcg-cart{padding:18px 20px max(22px,env(safe-area-inset-bottom))}}
+@media(prefers-reduced-motion:reduce){#christmas-gifts .hcg-product,#christmas-gifts .hcg-art img,#christmas-gifts .hcg-check,#christmas-gifts .hcg-add,#christmas-gifts .hcg-checkout{transition:none}}
