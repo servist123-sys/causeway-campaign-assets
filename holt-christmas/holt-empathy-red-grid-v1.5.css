@@ -1,0 +1,14 @@
+/* Holt Christmas intro grid lights v1.5 */
+.hxr2-grid-lights{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,#000,transparent 36%,transparent 64%,#000);mask-image:linear-gradient(90deg,#000,transparent 36%,transparent 64%,#000)}
+.hxr2-grid-lights>i{position:absolute;top:calc(var(--hxr2-grid) * var(--row));left:0;width:32%;height:1px}
+.hxr2-grid-lights>i.hxr2-right{left:auto;right:0;transform:scaleX(-1)}
+.hxr2-grid-lights b{position:absolute;left:-60px;top:0;width:58px;height:1px;opacity:0;background:linear-gradient(90deg,transparent,#efd29580 60%,#fff0cf);box-shadow:0 0 7px #f6d59666;animation:hxr2-grid-run 4s linear infinite both;animation-delay:var(--wait);animation-play-state:paused}
+.hxr2-grid-lights b::after{content:"";position:absolute;right:0;top:-1px;width:3px;height:3px;border-radius:50%;background:#fff1d3;box-shadow:0 0 7px 2px #ffdf9c80}
+.hxr2-inview .hxr2-grid-lights b{animation-play-state:running}
+@keyframes hxr2-grid-run{0%{left:-60px;opacity:0}8%,52%{opacity:.75}68%,100%{left:100%;opacity:0}}
+.hxr2-grid-lights>i.hxr2-vertical{top:0;left:var(--col);right:auto;width:1px;height:100%}
+.hxr2-grid-lights>i.hxr2-up{transform:scaleY(-1)}
+.hxr2-grid-lights>i.hxr2-vertical b{top:-60px;left:0;width:1px;height:58px;background:linear-gradient(180deg,transparent,#efd29580 60%,#fff0cf);animation-name:hxr2-grid-vertical;animation-duration:6s}
+.hxr2-grid-lights>i.hxr2-vertical b::after{right:auto;left:-1px;top:auto;bottom:0}
+@keyframes hxr2-grid-vertical{0%{top:-60px;opacity:0}8%,52%{opacity:.75}68%,100%{top:100%;opacity:0}}
+@media(prefers-reduced-motion:reduce){.hxr2-grid-lights{display:none}.hxr2-grid-lights b{animation:none}}
